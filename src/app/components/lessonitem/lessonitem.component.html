@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-lg-4" *ngFor="let lessons in lessonsList">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h4 class="card-title">{{lessons.lessonName}}</h4> 
+        </div>
+        <div class="card-body">
+            <span>Lesson Taker: {{lessons.lessonTaker}}</span>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+                <span>Lesson Start: {{lessons.lessonsStartTime}}</span>  
+          </div> 
+        </div>
+      </div>
+    </div>
+</div>

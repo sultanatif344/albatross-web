@@ -1,0 +1,169 @@
+<div class="panel-header panel-header-sm">
+    <!-- <canvas baseChart id="bigDashboardChart"
+                [datasets]="lineBigDashboardChartData"
+                [labels]="lineBigDashboardChartLabels"
+                 [colors]="lineBigDashboardChartColors"
+                [options]="lineBigDashboardChartOptions"
+                [chartType]="lineBigDashboardChartType"
+                (chartHover)="chartHovered($event)"
+                (chartClick)="chartClicked($event)"></canvas> -->
+</div>
+
+<div class="main-content">
+  
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let lessons of lessonsList" (click)="openDialog()">
+      <div class="card card-chart">
+        <div class="card-header">
+          <h5 class="card-category"></h5>
+          <h4 class="card-title">{{lessons.lessonName}}</h4>
+        </div>
+        <div class="card-body">
+          <h5>Lesson Taker: {{lessons.lessonTaker}}</h5>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            Start: {{lessons.lessonStartTime}}
+            <span class="text-right">
+              End: {{lessons.lessonEndTime}}
+            </span>
+          </div> 
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-md-6">
+      <hr class="style10">
+      <div class="card  card-tasks">
+        <div class="card-header ">
+          <!-- <h5 class="card-category">Backend development</h5>
+          <h4 class="card-title">Tasks</h4> -->
+          
+          <h4 class="card-title">Current Lessons</h4>
+        </div>
+        <div class="card-body ">
+          <div class="table-full-width table-responsive">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" checked>
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-left">Third Lesson</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                      <i class="now-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox">
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-left">Design Psychology</td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                      <i class="now-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" checked>
+                        <span class="form-check-sign"></span>
+                      </label>
+                    </div>
+                  </td>
+                  <td class="text-left">
+                    The Basics Of Typography
+                  </td>
+                  <td class="td-actions text-right">
+                    <button type="button" rel="tooltip" title="" class="btn btn-info btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Edit Task">
+                      <i class="now-ui-icons ui-2_settings-90"></i>
+                    </button>
+                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-round btn-icon btn-icon-mini btn-neutral" data-original-title="Remove">
+                      <i class="now-ui-icons ui-1_simple-remove"></i>
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card-footer ">
+          <hr>
+          <div class="stats">
+            <i class="now-ui-icons loader_refresh spin"></i> Updated 3 minutes ago
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <hr class="style10">
+      <div class="card">
+        <div class="card-header">
+          <!-- <h5 class="card-category">All </h5> -->
+          <h4 class="card-title"> Enrolled Students</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <th>
+                  Name
+                </th>
+                <th>
+                  Course Name
+                </th>
+                <th>
+                  Language
+                </th>
+                <th class="text-right">
+                  Fee
+                </th>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Person 1</td>
+                <td>Design Psychology</td>
+                <td>English</td>
+                <td>$700/hr</td>
+              </tr>
+              <tr>
+                <td>Person 2</td>
+                <td>The Basics Of Typography</td>
+                <td>English</td>
+                <td>$700/hr</td>
+              </tr>
+              <tr>
+                <td>Person 3</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>$700/hr</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

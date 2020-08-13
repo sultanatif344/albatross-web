@@ -1,0 +1,7 @@
+.sidebar[data-color=darkgreen]:after, .off-canvas-sidebar[data-color=darkgreen]:after {
+    background: #1b461c !important;
+}
+
+.remove-background{
+    mix-blend-mode: multiply;
+}
