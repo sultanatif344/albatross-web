@@ -5,10 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {CardsModule} from 'angular-bootstrap-md'
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
@@ -29,7 +29,9 @@ import { CalendarModule } from '@syncfusion/ej2-angular-calendars';
     NgbModule,
     ToastrModule.forRoot(),
     MatDialogModule,
-    CalendarModule
+    CalendarModule,
+    MDBBootstrapModule.forRoot(),
+    CardsModule.forRoot()
   ],
   declarations: [
     AppComponent,

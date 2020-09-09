@@ -3,9 +3,10 @@
   "version": "1.2.0",
   "license": "MIT",
   "scripts": {
-    "heroku-postbuild":"ng-build --prod",
+    "heroku-postbuild": "ng-build --prod",
     "ng": "ng",
     "start": "ng serve",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -13,12 +14,12 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "9.0.6",
-    "@angular/compiler-cli": "9.0.6",
     "@angular/animations": "9.0.6",
     "@angular/cdk": "^9.2.4",
+    "@angular/cli": "9.0.6",
     "@angular/common": "9.0.6",
     "@angular/compiler": "9.0.6",
+    "@angular/compiler-cli": "9.0.6",
     "@angular/core": "9.0.6",
     "@angular/forms": "9.0.6",
     "@angular/http": "7.2.16",
@@ -28,18 +29,22 @@
     "@angular/platform-browser-dynamic": "9.0.6",
     "@angular/platform-server": "9.0.6",
     "@angular/router": "9.0.6",
+    "@fortawesome/fontawesome-free": "^5.14.0",
     "@ng-bootstrap/ng-bootstrap": "6.0.0",
     "@syncfusion/ej2-angular-calendars": "^18.2.44",
+    "@types/chart.js": "^2.9.24",
     "ajv": "6.12.0",
     "ajv-keywords": "3.4.1",
+    "angular-bootstrap-md": "^9.4.0",
+    "animate.css": "^4.1.1",
     "bootstrap": "4.2.1",
-    "chart.js": "2.7.3",
+    "chart.js": "^2.5.0",
     "chartist": "0.11.0",
     "classlist.js": "1.1.20150312",
     "copy-webpack-plugin": "4.6.0",
     "core-js": "3.6.4",
     "font-awesome": "4.7.0",
-    "hammerjs": "2.0.8",
+    "hammerjs": "^2.0.8",
     "jquery": "3.3.1",
     "jw-bootstrap-switch-ng2": "2.0.4",
     "ng2-charts": "1.6.0",
@@ -50,9 +55,9 @@
     "rellax": "1.7.2",
     "rxjs": "6.3.3",
     "tslib": "^1.11.1",
+    "typescript": "3.7.5",
     "web-animations-js": "2.3.1",
-    "zone.js": "0.8.27",
-    "typescript": "3.7.5"
+    "zone.js": "0.8.27"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.6",
@@ -80,6 +85,6 @@
   },
   "engines": {
     "node": "12.18.2",
-    "npm":"6.14.5"
+    "npm": "6.14.5"
   }
 }
