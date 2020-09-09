@@ -35,7 +35,7 @@ import {CardsModule, MdbCardTextComponent} from 'angular-bootstrap-md'
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
-    MdbCardTextComponent
+    // MdbCardTextComponent
   ]
 })
 

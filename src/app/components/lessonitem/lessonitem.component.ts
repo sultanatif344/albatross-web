@@ -13,7 +13,13 @@ export class LessonitemComponent implements OnInit {
   public lessonsList: Array<Object>;
   lessons: Object;
   ngOnInit(): void {
-    
+    this.lessonsList = [
+      this.lessons={
+        lessonName:"First Lesson",
+        lessonTaker:"Lesson One",
+        lessonsStartTime:"10:50AM"
+      }
+    ]
   }
 
 
