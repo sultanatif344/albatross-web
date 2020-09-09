@@ -14,7 +14,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
-import {CardsModule} from 'angular-bootstrap-md'
+import {CardsModule, MdbCardTextComponent} from 'angular-bootstrap-md'
 
 @NgModule({
   imports: [
@@ -35,6 +35,7 @@ import {CardsModule} from 'angular-bootstrap-md'
     IconsComponent,
     MapsComponent,
     NotificationsComponent,
+    MdbCardTextComponent
   ]
 })
 
